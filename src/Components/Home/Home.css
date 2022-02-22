@@ -1,0 +1,37 @@
+.d-flex {
+  justify-content: center;
+}
+.space {
+  margin-right: 10%;
+}
+
+#Home-container {
+  position: relative;
+  place-items: center center;
+  align-items: center;
+  /* box-sizing: border-box;
+  background-color: black;
+  opacity: 0.7;
+  overflow: hidden; */
+}
+#sign-in-from {
+  max-width: 300px;
+  color: white;
+  align-items: center;
+}
+/* .Form-control:focus { z-index: 7 }  */
+.Logo {
+  width: 173px;
+  height: 137px;
+  margin: 7%;
+}
+.facebook-icon,
+.google-icon {
+  background-color: white;
+  justify-content: space-evenly;
+  border-radius: 50%;
+  display: flex;
+}
+.forgot-password {
+  float: right;
+}
