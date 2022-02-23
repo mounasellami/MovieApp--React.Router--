@@ -7,11 +7,16 @@ import Footer from './Components/Footer/Footer';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Trailers from './Components/Trailers/Trailers';
+import PrivateRoute from './Components/PrivateRoute';
 
 function App() {
   const [moviesList, setMoviesList]=useState(moviesData);
   const [filterByName, setFilterByName]=useState('');
   const [filterByRate, setFilterByRate]=useState(1);
+
+  const [isAuth, setIsAuth]=useState(false);
+  const signin = () => setIsAuth(true);
+  const signup = () => setIsAuth(false);
 
   const addMovie = (newMovie) => setMoviesList([...moviesList, newMovie]);
   return (
@@ -22,26 +27,29 @@ function App() {
       />
 
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home isAuth={isAuth} signup={signup} signin={signin} />} />
         {/* <Route path='/Series' element={ }/> */}
-        <Route path='/Movies' 
-               element={ <MoviesList
-                         moviesList={moviesList}
-                         filterByName={filterByName}
-                         filterByRate={filterByRate} 
-                         addMovie={addMovie}
-                         />
-                        }
-        /> 
+
+        {/* <Route path='/Movies' element={ <PrivateRoute component={ <MoviesList moviesList={moviesList} filterByName={filterByName} filterByRate={filterByRate} addMovie={addMovie}/>} isAuth={isAuth}/>} />   NOT CORRECT*/}
+        <Route path='/Movies' element={<PrivateRoute render={()=>(<MoviesList moviesList={moviesList}
+                                                                              filterByName={filterByName}
+                                                                              filterByRate={filterByRate} 
+                                                                              addMovie={addMovie}
+                                                                  />)
+                                                            }
+                                                      isAuth={isAuth}
+                                        />}
+        />
         <Route path='/Movies/:name' element={<Trailers moviesData={moviesData} />}/> 
-        {/* <Route path='/Latest' element={ }/>
-        <Route path='/Mylist' element={ }/> */}
+
+        {/* <Route path='/Latest' element={ }/> */}
+        {/* <Route path='/Mylist' element={ }/> */}
       </Routes>
 
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
 

@@ -43,7 +43,7 @@ form h2 {
   text-decoration: underline;
 }
 form {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   color: #141414;
 }

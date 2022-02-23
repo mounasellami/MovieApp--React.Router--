@@ -1,3 +1,7 @@
+.Signindiv {
+  background: no-repeat url("../../res/img/bgHome.png");
+  background-size: cover;
+}
 .d-flex {
   justify-content: center;
 }
@@ -8,16 +12,18 @@
 #Home-container {
   position: relative;
   place-items: center center;
-  align-items: center;
-  /* box-sizing: border-box;
-  background-color: black;
-  opacity: 0.7;
-  overflow: hidden; */
 }
 #sign-in-from {
-  max-width: 300px;
+  max-width: 464px;
   color: white;
   align-items: center;
+
+  padding: 6%;
+  margin: 8% 7%;
+  box-sizing: border-box;
+  background-color: black; /* rgba(0, 0, 0, 0.75); */
+  opacity: 0.7;
+  overflow: hidden;
 }
 /* .Form-control:focus { z-index: 7 }  */
 .Logo {

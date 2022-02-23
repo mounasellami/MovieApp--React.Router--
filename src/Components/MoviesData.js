@@ -33,6 +33,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: 'https://fr.web.img6.acsta.net/pictures/21/08/02/16/08/1706767.jpg',
+        video: 'https://www.youtube.com/embed/hMANIarjT50',
         rating: '4.1',
         name: 'La casa de papel',
         date: '2017',
@@ -43,6 +44,7 @@ export const moviesData = [
         {
         id: Math.random(),
         image: 'https://m.media-amazon.com/images/M/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg',
+        video: 'https://www.youtube.com/embed/X4bF_quwNtw',
         rating: '4.05',
         name: 'Lucifer',
         date: '2016–2021',
@@ -52,6 +54,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: "https://m.media-amazon.com/images/M/MV5BMTViMDJlYzEtOTUxNi00ZTU5LWI5MTYtMGViNTQ4NTVkYTMyXkEyXkFqcGdeQXVyMzAzNTY3MDM@._V1_.jpg",
+        video: 'https://www.youtube.com/embed/fYlZDTru55g',
         rating: '4.05',
         name: 'The Good Doctor',
         date: '2017',
@@ -61,6 +64,7 @@ export const moviesData = [
         {
         id: Math.random(),
         image: "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+        video: 'https://www.youtube.com/embed/K0eDlFX9GMc',
         rating: '4.2',
         name: '3 Idiots',
         date: '2009',
@@ -70,6 +74,7 @@ export const moviesData = [
         {
         id: Math.random(),
         image: " https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg ",
+        video: 'https://www.youtube.com/embed/zSWdZVtXT7E',
         rating: '4.3',
         name: 'Interstellar',
         date: '2014',
@@ -79,6 +84,7 @@ export const moviesData = [
         {
         id: Math.random(),
         image: "https://m.media-amazon.com/images/I/519NBNHX5BL.jpg",
+        video: '',
         rating: '5',
         name: 'The Shawshank Redemption',
         date: '1994',
@@ -88,6 +94,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image:"https://cps-static.rovicorp.com/2/Open/Paramount_Pictures_1103/Program/21743062/_derived_jpg_q90_310x470_m0/WolkOfWallStreetPA.jpg",
+        video: 'https://www.youtube.com/embed/iszwuX1AK6A',
         rating: '4.1',
         name: 'The Wolf of Wall Street',
         date: '2013',
@@ -97,6 +104,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: 'https://i.pinimg.com/originals/4d/ea/be/4deabeb03554cacdba17995886789005.jpg',
+        video: 'https://www.youtube.com/embed/iGTSDqSLXN0',
         rating: 4,
         name: "Devil's Mile",
         date: '2014',
@@ -106,6 +114,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: 'https://m.media-amazon.com/images/M/MV5BZGI5MjBmYzYtMzJhZi00NGI1LTk3MzItYjBjMzcxM2U3MDdiXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
+        video: 'https://www.youtube.com/embed/c8CJ6L0I6W8',
         rating: '4.25',
         name: 'Once Upon A Time In The west',
         date: '1968',
@@ -115,6 +124,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: 'https://i.pinimg.com/564x/37/bd/f8/37bdf8f405a30977959e112d6f48aec0.jpg',
+        video: 'https://www.youtube.com/embed/UUxD4-dEzn0',
         rating: '4',
         name: 'Taxi Driver',
         date: '1976',
@@ -124,6 +134,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2n6mrijVjYMAFEQ1DUaKCp0P02YwVyzAO9Hf1ypNEPvsJk835',
+        video: 'https://www.youtube.com/embed/7kSuas6mRpk',
         rating: '4',
         name: 'Kill Bill: VOL.1',
         date: '2003',
@@ -134,6 +145,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: 'http://assets.nflxext.com/us/boxshots/hd1080/80025919.jpg',
+        video: 'https://www.youtube.com/embed/hEJnMQG9ev8',
         rating: '4.05',
         name: 'Mad Max: Fury Road',
         date: '2015',
@@ -143,6 +155,7 @@ export const moviesData = [
     {
         id: Math.random(),
         image: 'https://upload.wikimedia.org/wikipedia/en/1/16/Little_miss_sunshine_poster.jpg',
+        video: 'https://www.youtube.com/embed/bQ7BZTMLImA',
         rating: '3.9',
         name: 'Little Miss Sunshine',
         date: '2006',
@@ -153,6 +166,7 @@ export const moviesData = [
     // {
     //     id: Math.random(),
     //     image: '',
+    //     video: '',
     //     rating: '',
     //     name: '',
     //     date: '',

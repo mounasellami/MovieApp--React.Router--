@@ -1,25 +1,18 @@
 import React from 'react';
 import './Home.css';
 import { Container, Form, Button } from 'react-bootstrap';
-// import LogoNETFLIX from '../../res/img/LogoNETFLIX.png'
 import iconfacbook from "../../res/img/icon-facebook-48.png";
 import icongoogle from "../../res/img/icon-google-48.png";
 
-const Home=() => {
+const Home=({isAuth,  signin, signup}) => {
   return (
-    <div> 
+    <div className= "Signindiv"> 
       <Container id= "Home-container"
                  className= "d-grid h-100" 
                  style= {{color: "#fff"}}>
        <Form id= "sign-in-from"
-             className= "text-center w-100" >
-         {/* <img className="mb-4 Logo"
-             alt="React Bootstrap logo"
-             src={LogoNETFLIX}
-             width="263px"
-             height="70px"
-         />   */}
-         <h1 className= "mb-3 fs-3 fw-normal" style={{fontWeight: "700"}} > Sign in to watch Unlimited movies, TV shows, and more.</h1>
+             className= "text-center w-100" style= {{alignItem: "center"}}>
+         <h1 className= "mb-3 fs-3 fw-normal" style={{fontWeight: "700"}} > Sign in</h1>
         
          <Form.Group controlId="sign-in-email-address">
            <Form.Control type="email" 
@@ -46,7 +39,14 @@ const Home=() => {
          </Form.Group>
 
          <div className= "d-grid " >
-           <Button variant="info" size="lg" className= "mb-2"> Sign in </Button>
+           {/* <Button variant="info" size="lg" className= "mb-2"> Sign in </Button> */}
+           <Form inline>
+             <Button variant="outline-info" className="signinBtn"
+                onClick={isAuth ?  signup: signin}
+              >
+                {isAuth ? "SignUp" : "SignIn"}
+             </Button>
+            </Form>
          </div>
           <div className="divider">-------------- or sign in with --------------</div>
           <div className="icon-party d-flex " style={{fontWeight: "600", fontSize: "13px" }} >
